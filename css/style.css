@@ -1,0 +1,441 @@
+:root {
+    font-size: 10px;
+}
+body {
+    background-color: white;
+    font-weight: 500;
+}
+body, input, button, h1, h2, h3, h4, h5, h6, ul, li {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+}
+input:focus {
+    outline: none;
+}
+
+
+
+/* HEADER-CONTACTS */
+header .mobile-menu {
+    display: none;
+}
+header .contacts, footer .contacts {
+    padding: 15px;
+    background-color: #000000;
+    color: white;
+}
+header .contacts span:first-of-type, footer .contacts span:first-of-type {
+    margin-left: 7%;
+}
+header .contacts span, footer .contacts span {
+    margin: 20px;
+}
+header .contacts img, footer .contacts img {
+    padding-right: 15px;
+}
+
+
+
+/* HEADER-USER-PROFILE */
+header .user-profile {
+    max-width: 100%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+header .user-profile > span{
+    display: block;
+}
+.user-profile .header-home-logo, .user-profile .header-searchbar,.profile {
+    flex-grow: 1;
+}
+.user-profile .header-home-logo img {
+    display: block;
+    margin: auto;
+}
+.user-profile .header-searchbar #searchbar {
+    display: block;
+    margin: auto;
+    margin-left: 105px;
+    width: 300px;
+    padding: 10px 15px 10px 50px;
+    border: .5px solid #4f4f4f;
+    border-radius: 5px;
+    outline: none;
+}
+.user-profile .header-searchbar {
+    position: relative;
+    
+}
+.user-profile .header-searchbar .searchImg {
+    position: absolute;
+    top: 12px;
+    left: 120px;
+}
+.user-profile .profile > span { 
+    width: max-content;
+    display: inline-block;
+    text-align: center;
+    margin: auto 30px auto 0px;
+}
+.user-profile .profile { 
+    flex-grow: 0;
+}
+
+
+
+/* HEADER-USER-OPTIONS */
+.user-options {
+    padding: 0 5.5%;
+    margin: auto;
+    border-top: .5px solid #4f4f4f;
+}
+.user-options ul {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    list-style: none;
+}
+.user-options ul li {
+    flex-grow: 1;
+    display: inline-block;
+    padding: 16px;
+}
+
+
+
+/* HEADER-LANDING */
+.header-landing .landing-wrapper {
+    width: 100%;
+    height: 530px;
+    background-color: #123456;
+    background-image: url(../img/lamp.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-landing .landing-wrapper .landing-info {
+    width: 270px;
+    padding: 30px;
+    padding-right: 60px;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 7.5%;
+}
+.header-landing .proceed-btn {
+    display: flex;
+    align-items: center;
+    width: max-content;
+    padding: 15px;
+    margin-top: 40px;
+    background-color: black;
+    color: white;
+}
+.header-landing .proceed-btn img {
+    display: block;
+    margin-left: 20px;
+}
+
+
+
+/* FOR MAIN PART */
+main .shop-by-space, main .popular-categories, main .popular-products, main .products-on-sale {
+    padding: 30px 7.5%;
+}
+.shop-by-space h2 span, .popular-categories h2 span, .popular-products h2 span, .products-on-sale h2 span {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    color: orange;
+    text-decoration: underline;
+    font-size: .9rem;
+}
+.shop-by-space .space-options, .popular-categories .popular-options, .popular-products .popular-products-options, .products-on-sale .sale-options {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.shop-by-space .space-options > div, .popular-categories .popular-options > div, .popular-products .popular-products-options > div > div, .products-on-sale .sale-options > div > div, aside .form-mail .form-image, header .mobile-menu > div:nth-of-type(3) {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+    background-color: #123456;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.popular-categories .popular-options > div {
+    width: 500px;
+    height: 300px;
+}
+.popular-products .popular-products-options > div > div, .products-on-sale .sale-options > div > div {
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.shop-by-space .space-options > div div , .popular-categories .popular-options > div div {
+    text-transform: uppercase;
+    position: absolute;
+    padding: 10px;
+    padding-right: 80px;
+    background-color: white;
+    color: orange;
+    border-radius: 5px;
+    left: 0;
+    bottom: 0;
+    margin: 0 0 30px 30px;
+}
+.shop-by-space .space-options > div:nth-child(1) {
+    background-image: url(../img/home.png);
+}
+.shop-by-space .space-options > div:nth-child(2) {
+    background-image: url(../img/office.png);
+}
+.shop-by-space .space-options > div:nth-child(3) {
+    background-image: url(../img/hotel.png);
+}
+.popular-categories .popular-options > div:nth-child(1) {
+    background-image: url(../img/ceiling.png);
+}
+.popular-categories .popular-options > div:nth-child(2) {
+    background-image: url(../img/chandel.png);
+}
+/* POPULAR-PRODUCTS-OPTIONS */
+.popular-products .popular-products-options > div:nth-child(1) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(2) > div {
+    background-image: url(../img/wooden-chair.png);
+}
+.popular-products .popular-products-options > div:nth-child(3) > div {
+    background-image: url(../img/pendant-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(4) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(5) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(6) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(7) > div {
+    background-image: url(../img/pendant-lamp.png);
+}
+.popular-products .popular-products-options > div:nth-child(8) > div {
+    background-image: url(../img/wooden-chair.png);
+}
+/* PRODUCTS-ON-SALE-OPTIONS */
+.products-on-sale .sale-options > div:nth-child(1) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(2) > div {
+    background-image: url(../img/wooden-chair.png);
+}
+.products-on-sale .sale-options > div:nth-child(3) > div {
+    background-image: url(../img/pendant-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(4) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(5) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(6) > div {
+    background-image: url(../img/standing-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(7) > div {
+    background-image: url(../img/pendant-lamp.png);
+}
+.products-on-sale .sale-options > div:nth-child(8) > div {
+    background-image: url(../img/wooden-chair.png);
+}
+
+
+
+
+/* FOR THE CONTACT FORM */
+aside {
+    padding: 30px 7.5%;
+    display: flex;
+    justify-content: flex-start;
+}
+aside > div {
+    flex-grow: 1;
+    background-color: #f2f2f2;
+}
+aside > .form-mail {
+    padding: 50px;
+    padding-bottom: 25px;
+}
+aside .form-mail h2 img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.form-mail input[type="text"] {
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    border-bottom: .5px solid #4f4f4f;
+    padding: 7px;
+    margin-top: 40px;
+}
+.form-mail button {
+    display: block;
+    padding: 10px 50px;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin: 40px 40px 0px 0px;
+}
+aside .form-image {
+    width: 35%;
+    background-color: #123456;
+    background-image: url(../img/pen.png);
+}
+
+
+
+/* FOR THE FOOTER */
+footer {
+    background-color: #333333;
+    color: white;
+}
+footer > .footer-info {
+    padding: 30px 7.5%;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-info > div {
+    width: max-content;
+}
+.footer-info > div:nth-of-type(1) {
+    width: 20%;
+}
+.footer-info > div:nth-of-type(2) h4 {
+    text-transform: uppercase;
+    margin-top: 25px;
+    color: orange;
+}
+.footer-info > div:nth-of-type(2) ul {
+    text-transform: uppercase;
+    list-style: none;
+}
+.footer-info > div:nth-of-type(3) p {
+    margin-top: 25px;
+}
+.footer-info > div:nth-of-type(3) ul {
+    list-style: none;
+}
+.footer-info > div:nth-of-type(3) ul li {
+    padding: 0 5px;
+    padding-left: 0;
+    display: inline-block;
+}
+
+
+
+
+@media (max-width: 1500px) {
+    .shop-by-space .space-options > div, .popular-categories .popular-options > div {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 1250px) {
+    footer .footer-info {
+        flex-wrap: wrap;
+    }
+    .footer-info > div {
+        width: 50%;
+    }
+
+    aside .form-image {
+        display: none;
+    }
+}
+@media (max-width: 1150px) {
+    header .mobile-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    header .hamburger {
+        font-size: 3rem;
+    }
+    header .mobile-menu > div:nth-of-type(3){
+        width: 40px;
+        height: 40px;
+        background-image: url(../img/cart.png); 
+        background-color: transparent;
+    }
+    header .contacts {
+        display: none;
+    }
+    .user-profile .header-home-logo img {
+        display: none;
+    }
+    .user-profile .profile {
+        display: none;
+    }
+    .user-profile .header-searchbar {
+        width: 100%;
+        display: flex;
+    }
+    .user-profile .header-searchbar #searchbar{
+        flex-grow: 1;
+        margin: 0;
+    }
+    .user-profile .header-searchbar .searchImg{
+        left: 10px;
+    }
+    .user-options {
+        display: none;
+    }
+    .header-landing .landing-wrapper {
+        width: 300px;
+        height: auto;
+        background-image: none;
+        background-color: transparent;
+    }
+    .header-landing .landing-wrapper .landing-info {
+        width: 200px;
+        border-bottom: .5px solid orange;
+    }
+    .shop-by-space .space-options, .popular-categories .popular-options, .popular-products .popular-products-options, .products-on-sale .sale-options {
+        flex-wrap: nowrap;
+        overflow: scroll;
+    }
+    .shop-by-space .space-options > div, .popular-products .popular-products-options > div > div, .products-on-sale .sale-options > div > div {
+        width: 200px;
+        height: 150px;
+    }
+    .popular-categories .popular-options > div {
+        width: 350px;
+        height: 250px;
+    }
+    .shop-by-space .space-options > div div , .popular-categories .popular-options > div div {
+        width: max-content;
+        margin: 0 0 10px 10px;
+        padding: 5px;
+        padding-right: 50px;
+    }
+    .form-mail input[type="text"] {
+    		  width: 150px;
+    }
+    .footer-info > div:nth-of-type(1) {
+        width: 85%;
+    }
+    .footer-info > div {
+        width: 100%;
+        margin-top: 40px;
+    }
+}
